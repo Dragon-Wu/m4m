@@ -91,7 +91,7 @@ def plot_calibration_curve(clf, name, ax, X_test, y_test, title):
         prob_pos = \
             (prob_pos - prob_pos.min()) / (prob_pos.max() - prob_pos.min())
 
-    clf_score = brier_score_loss(y_test, prob_pos, pos_label=y.max())
+    clf_score = brier_score_loss(y_test, prob_pos, pos_label=y_test.max())
 
     fraction_of_positives, mean_predicted_value = \
         calibration_curve(y_test, prob_pos, n_bins=10, normalize=False)
