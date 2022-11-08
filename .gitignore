@@ -1,1 +1,6 @@
-__pycache__/
+# dependency
+.ipynb_checkpoints
+__pycache__
+
+*.pyc
+test_*

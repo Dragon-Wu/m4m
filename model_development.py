@@ -1,13 +1,13 @@
 import pandas as pd
 from tqdm import tqdm
 from sklearn.metrics import classification_report
-from m4m.metrics import (
+from metrics import (
     get_general_auc,
     paint_general_cm,
     paint_general_roc_pr,
     paint_prob_distribution,
 )
-from m4m.simpletools import ListArray_2_FlattenArray
+from simpletools import ListArray_2_FlattenArray
 
 # model
 from xgboost import XGBClassifier

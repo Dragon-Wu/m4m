@@ -9,13 +9,13 @@ from sklearn.metrics import RocCurveDisplay
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import PrecisionRecallDisplay
-from m4m.metrics import paint_prob_distribution
+from metrics import paint_prob_distribution
 # tools
 from sklearn.utils import resample
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
-from m4m.simpletools import cal_CI
+from simpletools import cal_CI
 # paint
 import matplotlib.pyplot as plt
 from matplotlib import pyplot
