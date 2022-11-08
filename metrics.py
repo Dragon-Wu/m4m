@@ -1,25 +1,18 @@
 # import
-from simpletools import ListArray_2_FlattenArray
-import plotly.express as px
-from plotly.subplots import make_subplots
-import plotly.graph_objs as go
-import plotly.figure_factory as ff
-from plotly.offline import plot, iplot, init_notebook_mode
 import numpy as np
-
-# simple reort
-from sklearn.metrics import classification_report
+from simpletools import ListArray_2_FlattenArray
 
 # confusion matrix
 from sklearn.metrics import confusion_matrix
 from mlxtend.plotting import plot_confusion_matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 
+# General
+from sklearn.metrics import classification_report
 # ROC curve and metrics
 from sklearn.metrics import roc_curve, auc
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import RocCurveDisplay
-
 # PRC curve and metrics
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import precision_recall_curve
@@ -30,6 +23,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib import pyplot
 from matplotlib import rcParams
+# plotly
+import plotly.express as px
+from plotly.subplots import make_subplots
+import plotly.graph_objs as go
+import plotly.figure_factory as ff
+from plotly.offline import plot, iplot, init_notebook_mode
 
 rcParams["font.size"] = 15  # 设置字体大小
 palette = pyplot.get_cmap("tab10")
