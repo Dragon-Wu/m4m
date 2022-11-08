@@ -7,12 +7,12 @@ from metrics import (
     paint_general_roc_pr,
     paint_prob_distribution,
 )
-from simpletools import ListArray_2_FlattenArray
-
 # model
 from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
 from catboost import CatBoostClassifier, Pool
+# our method
+from simpletools import ListArray_2_FlattenArray
 
 
 def clf_train_test_cv(
