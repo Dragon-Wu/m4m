@@ -9,13 +9,12 @@ from sklearn.metrics import RocCurveDisplay
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import PrecisionRecallDisplay
-from metrics import paint_prob_distribution
+
 # tools
 from sklearn.utils import resample
 import pandas as pd
 import numpy as np
 from tqdm import tqdm
-from simpletools import cal_CI
 # paint
 import matplotlib.pyplot as plt
 from matplotlib import pyplot
@@ -24,6 +23,9 @@ rcParams['font.size'] = 15  # 设置字体大小
 palette = pyplot.get_cmap('tab10')
 # pyplot.style.use('seaborn-white')
 
+# our method
+from .simpletools import cal_CI
+from .metrics import paint_prob_distribution
 
 def clf_test_external(df_test, clf, show_score_dis=0, show_not=0, col_target='tracheotomy', target_names=['Not', 'Tra'], flag_print=None):
     '''

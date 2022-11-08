@@ -1,7 +1,7 @@
 # import
+import numpy as np
 from sklearn import datasets
 from sklearn.metrics import brier_score_loss
-import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.calibration import CalibrationDisplay, calibration_curve

@@ -1,7 +1,5 @@
 # import
 import numpy as np
-from simpletools import ListArray_2_FlattenArray
-
 # confusion matrix
 from sklearn.metrics import confusion_matrix
 from mlxtend.plotting import plot_confusion_matrix
@@ -33,7 +31,8 @@ from plotly.offline import plot, iplot, init_notebook_mode
 rcParams["font.size"] = 15  # 设置字体大小
 palette = pyplot.get_cmap("tab10")
 
-# plotly
+# our method
+from .simpletools import ListArray_2_FlattenArray
 
 config_plotly = {
     "toImageButtonOptions": {
