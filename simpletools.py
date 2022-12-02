@@ -337,3 +337,8 @@ class ProgressBar(object):
             print(show_info, end="")
         else:
             print(show_bar, end="")
+
+def softmax(x, axis=None):
+    x = x - x.max(axis=axis, keepdims=True)
+    y = np.exp(x)
+    return y / y.sum(axis=axis, keepdims=True)
